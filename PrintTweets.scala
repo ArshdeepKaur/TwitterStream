@@ -18,6 +18,7 @@ object PrintTweets {
 
     // Configure Twitter credentials using twitter.txt
     setupTwitter()
+    anotherFeature()
     
     // Set up a Spark streaming context named "PrintTweets" that runs locally using
     // all CPU cores and one-second batches of data
