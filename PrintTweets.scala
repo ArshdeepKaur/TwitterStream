@@ -21,7 +21,8 @@ object PrintTweets {
     
     // Set up a Spark streaming context named "PrintTweets" that runs locally using
     // all CPU cores and one-second batches of data
-    val ssc = new StreamingContext("local[*]", "PrintTweets", Seconds(1))
+    // timeout is 10s
+    val ssc = new StreamingContext("local[*]", "PrintTweets", Seconds(10))
     
     // Get rid of log spam (should be called after the context is set up)
     setupLogging()
