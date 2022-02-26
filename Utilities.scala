@@ -24,6 +24,13 @@ object Utilities {
     }
   }
   
+
+  def anotherFeature() = {
+    import scala.io.Source
+
+    System.setProperty("twitter4j.oauth." +status)
+  }
+
   /** Retrieves a regex Pattern for parsing Apache access logs. */
   def apacheLogPattern():Pattern = {
     val ddd = "\\d{1,3}"                      
